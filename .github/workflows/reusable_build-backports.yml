@@ -48,7 +48,9 @@ jobs:
 
       - name: Fix ownership
         run: |
+          if [ -d "/__w/backports" ]; then
           chown -R root:root /__w/backports
+          fi
 
       - name: Build Backports
         env:
