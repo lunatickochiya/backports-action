@@ -48,8 +48,8 @@ jobs:
 
       - name: Fix ownership
         run: |
-          if [ -d "/__w/backports" ]; then
-          chown -R root:root /__w/backports
+          if [ -d "/__w/backports-action" ]; then
+          chown -R root:root /__w/backports-action
           fi
 
       - name: Build Backports
